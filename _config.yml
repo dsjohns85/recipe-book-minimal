@@ -1,0 +1,5 @@
+title: "Daniel's Recipe Book"
+collections:
+  recipes:
+    output: true
+    # Let Jekyll handle default URLs (like /recipes/test.html)
