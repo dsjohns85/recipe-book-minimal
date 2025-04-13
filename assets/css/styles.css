@@ -21,6 +21,14 @@
     background-color: #fff;
   }
   
+  /* For screens narrower than 768px, container goes 100% */
+@media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      border-radius: 0; /* optional: remove radius to fill screen edge-to-edge */
+    }
+  }
+
   /* Headings */
   h1, h2, h3 {
     color: #2c3e50;
