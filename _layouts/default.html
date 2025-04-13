@@ -3,8 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ page.title }} - {{ site.title }}</title>
+  <!-- Make sure to include the path with your baseurl if needed -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {{ content }}
+  <div class="container">
+    <header>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </nav>
+    </header>
+
+    {{ content }}
+
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} Daniel Johns</p>
+    </footer>
+  </div>
 </body>
 </html>
