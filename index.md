@@ -8,7 +8,11 @@ title: Home
 Here are the recipes:
 
 <ul>
-  {% for recipe in site.recipes %}
-    <li><a href="{{ recipe.url }}">{{ recipe.title }}</a></li>
-  {% endfor %}
+{% for recipe in site.recipes %}
+  <li>
+    URL: {{ recipe.url }}  
+    <br>
+    <a href="{{ recipe.url }}">Click to Test Link</a>
+  </li>
+{% endfor %}
 </ul>
